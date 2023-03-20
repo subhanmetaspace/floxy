@@ -14,7 +14,7 @@ const Root = styled.div`
 const Container = styled.div``;
 const TextWrapper = styled.div`
   @media (max-width: 768px) {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 14px;
   }
 `;
 const Text = styled.text`
@@ -55,7 +55,7 @@ const Button = styled.button`
   // background-image: linear-gradient(to bottom,#05061a,#05061a),linear-gradient(to top,#3a57b5,#9e5ae6);
   // background: linear-gradient(to top, rgb(58, 87, 181), rgb(158, 90, 230));
   font-size: 18px;
-  padding: 14px 38px;
+  padding: 14px 0px;
   // background-color:linear-gradient(to bottom, #3a57b5, #9e5ae6);
   // background-image: linear-gradient(to bottom, #0a0b33, #0a0b33), linear-gradient(to top, linear-gradient(to bottom, #3a57b5, #9e5ae6), #9e5ae6);
   // background-origin: border-box;
@@ -65,15 +65,16 @@ const Button = styled.button`
   border: none;
   margin: 0 20px 0 0;
   cursor: pointer;
+  width: 110px;
   // background-image: linear-gradient(to bottom, #0a0b33, #0a0b33), linear-gradient(to top, linear-gradient(to top, #3a57b5, #9e5ae6), #9e5ae6);
   @media (max-width: 768px) {
-    margin: 0 0 10px 20px;
+    margin: 0 0 10px 14px;
   }
 `;
 const ButtonWrapper = styled.div`
   margin-top: 60px;
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin: 30px 0;
   }
 `;
 const MarketTrend = () => {

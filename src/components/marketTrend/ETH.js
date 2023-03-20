@@ -24,10 +24,10 @@ const ETH = () => {
             <HeadingText>Currency</HeadingText>
             <HeadingText>Latest Price</HeadingText>
             <HeadingText>24h Charges</HeadingText>
-            <HeadingText>24h Higest price</HeadingText>
-            <HeadingText>24 lowest price</HeadingText>
-            <HeadingText>Transaction quantity</HeadingText>
-            <HeadingText>price trend</HeadingText>
+            <HeadingText>24h Highest Price</HeadingText>
+            <HeadingText>24h Lowest Price</HeadingText>
+            <HeadingText>Transaction Quantity</HeadingText>
+            <HeadingText>Price Trend</HeadingText>
             <HeadingText>Operate</HeadingText>
           </RecentlyUploadedHeader>
 

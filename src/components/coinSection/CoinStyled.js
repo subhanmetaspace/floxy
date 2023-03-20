@@ -15,10 +15,11 @@ export const Root = styled.div`
   background-repeat: no-repeat;
   position: relative;
   @media (max-width: 767px) {
-    height: 100vh;
+    height: auto;
+    padding: 30px 0;
   }
   @media (max-width: 530px) {
-    height: 100vh;
+    height: auto;
   }
 `;
 export const Container = styled.div`

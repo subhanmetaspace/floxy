@@ -4,6 +4,7 @@ export const Root = styled.div`
   padding: 100px 0;
   @media (max-width: 768px) {
     padding: 20px 30px;
+    margin-top: 50px;
   }
 `;
 
@@ -50,7 +51,7 @@ export const HeadingText = styled.div`
   }
   @media (max-width: 425px) {
     font-size: 26px;
-    margin: 20px 0;
+    margin: 10px 0;
     /* margin-left: 1px; */
     line-height: 1;
   }
@@ -82,12 +83,12 @@ export const Text = styled.div`
   @media (max-width: 768px) {
     font-size: 14px;
     /* margin-left: 15px; */
-    margin: 20px 0;
+    margin: 25px 0;
   }
   @media (max-width: 425px) {
     font-size: 14px;
     /* margin-left: 5px; */
-    margin: 20px 0;
+    margin: 25px 0;
   }
 `;
 
@@ -104,6 +105,7 @@ export const QRImage = styled.img`
   width: 40%;
   @media (max-width: 768px) {
     width: 100%;
+    margin-top: 40px;
   }
 `;
 
@@ -118,9 +120,13 @@ export const DownloadButton = styled.div`
   border-radius: 12px;
   border-style: solid;
   border-width: 2px;
-  border-image-source: linear-gradient(to top, #3a57b5, #9e5ae6);
+  border-image-source: linear-gradient(to right, #3a57b5, #9e5ae6);
   border-image-slice: 1;
   /* margin-left: -75px; */
+
+  @media (max-width: 768px) {
+    margin: 50px 0 0 0;
+  }
 `;
 export const ButtonInsideWrapper = styled.div`
   display: flex;

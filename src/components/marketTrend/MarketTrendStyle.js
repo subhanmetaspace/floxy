@@ -64,8 +64,8 @@ export const RecentlyUploaded = styled.div`
   box-shadow: 0px 0px 5px 5px #0000;
   border-radius: 5px;
   @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
 `;
 export const ButtonWrapper = styled.div`

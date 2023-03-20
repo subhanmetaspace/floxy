@@ -5,7 +5,7 @@ export const Root = styled.div`
   z-index: 1;
   padding: 50px 150px 50px 100px;
   @media (max-width: 768px) {
-    padding: 30px;
+    padding: 50px 30px;
   }
 `;
 
@@ -47,7 +47,7 @@ export const FooterListHeading = styled.div`
   font-weight: 500;
   margin-bottom: 20px;
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 0;
   }
 `;
@@ -85,7 +85,7 @@ export const FooterTwitterIcon = styled.div`
 
 export const FooterSubscribeHeading = styled.div`
   @media (max-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -138,7 +138,7 @@ export const FooterCopyRightLink = styled.div`
   display: flex;
   justify-content: space-between;
   @media (max-width: 768px) {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 `;
 
@@ -159,4 +159,7 @@ export const FooterSubscribeElement = styled.div`
   font-size: 16px;
   font-weight: 500;
   margin-right: 50px;
+  @media (max-width: 768px) {
+    margin: 0px 15px 5px 0;
+  }
 `;

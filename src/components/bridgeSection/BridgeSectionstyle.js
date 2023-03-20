@@ -18,6 +18,8 @@ align-items: center;
 @media(max-width:768px){
 display: flex;
 flex-direction: column;
+height: auto;
+padding: 30px 0;
 }
 
 `;

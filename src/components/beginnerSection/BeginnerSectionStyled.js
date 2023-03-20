@@ -3,7 +3,9 @@ import styled, { keyframes } from "styled-components";
 export const Root = styled.div`
   background-color: #000;
   margin-top: -1px;
- 
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
 `;
 export const Container = styled.div`
   /* width: 1440px; */
@@ -13,15 +15,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  @media(max-width:1440px){
+  @media (max-width: 1440px) {
     justify-content: space-around;
-    
   }
-  @media(max-width:767px){
-display: flex;
-flex-direction: column;
-padding: 25px;
-/* height: 100vh !important; */
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    /* height: 100vh !important; */
   }
 `;
 export const LeftsideWrapper = styled.div``;
@@ -29,7 +30,6 @@ export const LeftsideWrapper = styled.div``;
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  
 `;
 export const Text = styled.text`
   background-image: linear-gradient(to right, #777, #fff),
@@ -46,10 +46,10 @@ export const Text = styled.text`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media(max-width:850px){
+  @media (max-width: 850px) {
     font-size: 55px;
   }
-  @media(max-width:425px){
+  @media (max-width: 425px) {
     font-size: 50px;
   }
 `;
@@ -70,7 +70,7 @@ export const Paragraph = styled.p`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media(max-width:850px){
+  @media (max-width: 850px) {
     font-size: 18px;
   }
 `;
@@ -84,8 +84,8 @@ export const TextBoxOne = styled.div`
   margin: 20px 0;
   border-radius: 3px;
   background-color: #191d23;
-  @media(max-width:425px){
-    width:18vh
+  @media (max-width: 425px) {
+    width: 18vh;
   }
 `;
 export const TextIcon = styled.div`
@@ -177,7 +177,6 @@ export const TextMainDiv = styled.div`
   @media (max-width: 1260px) {
     margin-left: 0px;
   }
-  
 
   ::before {
     content: "";

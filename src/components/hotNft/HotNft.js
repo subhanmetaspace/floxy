@@ -32,6 +32,9 @@ const HeadingWrapper = styled.div`
   padding: 80px 10px 45px 0;
   display: flex;
   margin-left: 15%;
+  @media (max-width: 768px) {
+    margin-left: 6%;
+  }
 `;
 
 const HotNft = () => {
@@ -70,7 +73,9 @@ const HotNft = () => {
 
           <TextTravel>
             <Text>
-              <TextBallon><BallonImage src={Ballon} /></TextBallon>
+              <TextBallon>
+                <BallonImage src={Ballon} />
+              </TextBallon>
               <TextHeadingTravel>TRAVEL</TextHeadingTravel>
               <TextParagraph>THE WORLD WITH CRYPTO</TextParagraph>
               <Button>Learn more</Button>
