@@ -64,6 +64,7 @@ export const FooterListElement = styled.div`
 export const FooterLogo = styled.img``;
 
 export const FooterFloxyEmail = styled.div`
+  cursor: pointer;
   color: #fff;
   font-weight: 500;
 `;
@@ -74,10 +75,12 @@ export const FooterLinkedInIcon = styled.i`
   color: #fff;
   margin-top: 10px;
   margin-right: 20px;
+  cursor: pointer;
 `;
 
 export const FooterTwitterIcon = styled.div`
   color: #fff;
+  cursor: pointer;
 `;
 
 export const FooterSubscribeHeading = styled.div`

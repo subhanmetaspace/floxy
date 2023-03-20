@@ -70,9 +70,7 @@ const HotNft = () => {
 
           <TextTravel>
             <Text>
-              <TextBallon>
-                <BallonImage src={Ballon} />
-              </TextBallon>
+              <TextBallon><BallonImage src={Ballon} /></TextBallon>
               <TextHeadingTravel>TRAVEL</TextHeadingTravel>
               <TextParagraph>THE WORLD WITH CRYPTO</TextParagraph>
               <Button>Learn more</Button>

@@ -8,12 +8,15 @@ const Root = styled.div`
   width: 1440px;
   margin: 30px auto;
   @media (max-width: 1440px) {
-    
     width: 100vw;
   }
 `;
 const Container = styled.div``;
-const TextWrapper = styled.div``;
+const TextWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 0 0 20px;
+  }
+`;
 const Text = styled.text`
   background-image: linear-gradient(to right, #777, #fff),
     linear-gradient(to bottom, #fff, #fff);
@@ -60,11 +63,11 @@ const Button = styled.button`
   color: #fff;
   // border-radius: 10px;
   border: none;
-  margin: 0 10px;
+  margin: 0 20px 0 0;
   cursor: pointer;
   // background-image: linear-gradient(to bottom, #0a0b33, #0a0b33), linear-gradient(to top, linear-gradient(to top, #3a57b5, #9e5ae6), #9e5ae6);
   @media (max-width: 768px) {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 20px;
   }
 `;
 const ButtonWrapper = styled.div`

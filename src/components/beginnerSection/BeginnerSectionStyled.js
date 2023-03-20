@@ -20,6 +20,7 @@ export const Container = styled.div`
   @media(max-width:767px){
 display: flex;
 flex-direction: column;
+padding: 25px;
 /* height: 100vh !important; */
   }
 `;
