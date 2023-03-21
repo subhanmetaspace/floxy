@@ -1,5 +1,7 @@
 import React from "react";
-import Laptop from "../images/banner-img.png";
+// import Laptop from "../images/banner-img.png";
+import Laptop from "../images/Website GIF.gif";
+
 import { FaArrowRight } from "react-icons/fa";
 import {
   Button,

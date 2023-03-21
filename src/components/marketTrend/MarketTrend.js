@@ -33,7 +33,7 @@ const Text = styled.text`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 50px;
   }
 `;
 const Button = styled.button`

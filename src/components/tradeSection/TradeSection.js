@@ -16,6 +16,7 @@ import {
   HeadingText,
   Text,
   QRImage,
+  ImageWrapper,
 } from "./TradeSection.styles";
 
 const TradeSection = () => {
@@ -42,7 +43,9 @@ const TradeSection = () => {
           </DownloadButton>
         </LeftWrapper>
 
-        <QRImage src={Laptop}></QRImage>
+        <ImageWrapper>
+          <QRImage src={Laptop}></QRImage>
+        </ImageWrapper>
       </MainWrapper>
     </Root>
   );

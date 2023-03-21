@@ -1,7 +1,8 @@
 import styled from "styled-components";
 export const Root = styled.div`
   background-image: linear-gradient(rgb(0, 0, 0), rgb(90, 45, 212));
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 100px 0 0px 0;
   @media (max-width: 768px) {
     padding: 20px 30px;
     margin-top: 50px;
@@ -9,9 +10,15 @@ export const Root = styled.div`
 `;
 
 export const MainWrapper = styled.div`
+  /* width: 1440px;
+margin: 0 auto; */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -39,18 +46,20 @@ export const HeadingText = styled.div`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @media (max-width: 1024px) {
-    font-size: 40px;
+    font-size: 55px;
     line-height: 1;
     margin: 20px 0;
   }
   @media (max-width: 768px) {
-    font-size: 28px;
+    /* font-size: 28px; */
     /* margin-left: 15px; */
+    font-size: 50px;
     line-height: 1;
     margin: 20px 0;
   }
   @media (max-width: 425px) {
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: 50px;
     margin: 10px 0;
     /* margin-left: 1px; */
     line-height: 1;
@@ -61,7 +70,9 @@ export const Text = styled.div`
   /* width: 400px;
   height: 60px; */
   /* margin-left: -75px; */
-  background-image: linear-gradient(to top, #777, #fff),
+  width: 80%;
+  margin: 5px 0;
+  background-image: linear-gradient(to right, #777, #fff),
     linear-gradient(to bottom, #ccc, #ccc);
   font-family: Lato;
   font-size: 22px;
@@ -83,17 +94,17 @@ export const Text = styled.div`
   @media (max-width: 768px) {
     font-size: 14px;
     /* margin-left: 15px; */
-    margin: 25px 0;
+    margin: 20px 0;
   }
   @media (max-width: 425px) {
     font-size: 14px;
     /* margin-left: 5px; */
-    margin: 25px 0;
+    margin: 10px 0;
   }
 `;
 
 export const LeftWrapper = styled.div`
-  width: 40%;
+  width: 30vw;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -101,8 +112,18 @@ export const LeftWrapper = styled.div`
 
 export const RightWrapper = styled.div``;
 
+export const ImageWrapper = styled.div``;
 export const QRImage = styled.img`
-  width: 40%;
+  width: 45vw;
+  /* height: 70vh; */
+  @media (max-width: 1024px) {
+    width: 50vw;
+    margin-top: 40px;
+  }
+  @media (max-width: 900px) {
+    width: 43vw;
+    margin-top: 40px;
+  }
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 40px;
@@ -117,6 +138,7 @@ export const DownloadButton = styled.div`
     linear-gradient(to right, #3a57b5, #9e5ae6) border-box;
   padding: 8px 10px 8px 6px;
   width: 208px;
+  margin-top: 40px;
   border-radius: 12px;
   border-style: solid;
   border-width: 2px;
@@ -126,6 +148,9 @@ export const DownloadButton = styled.div`
 
   @media (max-width: 768px) {
     margin: 50px 0 0 0;
+  }
+  @media (max-width: 530px) {
+    margin: 30px 0 0 0;
   }
 `;
 export const ButtonInsideWrapper = styled.div`

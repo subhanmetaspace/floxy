@@ -53,7 +53,13 @@ export const FooterListHeading = styled.div`
 `;
 
 export const FooterListElement = styled.div`
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
+  transition: 0.7s;
+  color: rgb(104 104 104);
+  :hover {
+    color: #fff;
+  }
+
   cursor: pointer;
 
   padding-top: 15px;
@@ -64,22 +70,36 @@ export const FooterListElement = styled.div`
 export const FooterLogo = styled.img``;
 
 export const FooterFloxyEmail = styled.div`
+  transition: 0.7s;
+  color: rgb(104 104 104);
+  :hover {
+    color: #fff;
+  }
+
   cursor: pointer;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 500;
 `;
 
 export const FooterIconsWrapper = styled.div``;
 
 export const FooterLinkedInIcon = styled.i`
-  color: #fff;
+  color: rgb(104 104 104);
+  transition: 0.7s;
+  :hover {
+    color: rgb(158, 90, 230);
+  }
   margin-top: 10px;
   margin-right: 20px;
   cursor: pointer;
 `;
 
 export const FooterTwitterIcon = styled.div`
-  color: #fff;
+  color: rgb(104 104 104);
+  transition: 0.7s;
+  :hover {
+    color: rgb(158, 90, 230);
+  }
   cursor: pointer;
 `;
 
@@ -91,6 +111,11 @@ export const FooterSubscribeHeading = styled.div`
 
 export const FooterSubscribeText = styled.div`
   color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #777, #fff),
+    linear-gradient(to bottom, #fff, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 29px;
   font-weight: 500;
   line-height: 1.2;
@@ -105,7 +130,7 @@ export const FooterSubscribeInput = styled.input`
   color: rgb(171, 171, 171);
   font-size: 16px;
   border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 10px;
+  border-radius: 50px;
   @media (max-width: 768px) {
     padding: 22px 10px;
     width: 94%;
@@ -120,18 +145,33 @@ export const FooterSubscribeInputWrapper = styled.div`
 `;
 
 export const FooterSubscribeButton = styled.div`
-  color: rgb(255, 255, 255);
+  /* color: rgb(42, 42, 42); */
+  color: #fff;
   border: none;
   float: right;
-  background-color: rgb(17, 19, 66);
+  /* background-color: rgb(17, 19, 66); */
+  /* background-color: #fff; */
+  background-color: rgb(158, 90, 230);
+
   padding: 18px 40px;
-  border-radius: 10px;
+  border-radius: 50px;
   font-weight: 500;
   font-size: 16px;
   position: absolute;
   right: 3px;
   top: 3px;
+  transition: 0.7s;
+  border: 1px solid transparent;
   cursor: pointer;
+  :focus {
+    border: none;
+    outline: none;
+  }
+  :hover {
+    color: rgb(42, 42, 42);
+    background-color: #fff;
+    /* border: 1px solid #675ae696; */
+  }
 `;
 
 export const FooterCopyRightLink = styled.div`
@@ -154,11 +194,18 @@ export const FooterCopyRightText = styled.div`
 `;
 
 export const FooterSubscribeElement = styled.div`
-  color: rgb(255, 255, 255);
+  transition: 0.7s;
+  color: rgb(104 104 104);
+  :hover {
+    color: #fff;
+  }
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   margin-right: 50px;
+  :hover {
+    text-decoration: underline;
+  }
   @media (max-width: 768px) {
     margin: 0px 15px 5px 0;
   }

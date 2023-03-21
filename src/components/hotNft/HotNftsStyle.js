@@ -14,6 +14,7 @@ export const TextWrapper = styled.div`
   gap: 80px;
 `;
 export const TextPayment = styled.div`
+  position: relative;
   width: 210px;
   height: 70px;
   padding: 364px 130px 50px 30px;
@@ -78,6 +79,9 @@ export const Heading = styled.text`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 export const TextParagraph = styled.div`
   background-image: linear-gradient(to right, #777, #fff),
@@ -138,6 +142,8 @@ export const TextHeadingTravel = styled.div`
   margin-top: -100px;
 `;
 export const HandImage = styled.img`
+  position: relative;
+  z-index: 999;
   width: 310px;
   height: 259px;
   margin-top: -243px;
@@ -192,12 +198,13 @@ const Ballonanimation = keyframes`
 `;
 export const TextBallon = styled.div`
   margin-bottom: 30px;
-  animation: ${Ballonanimation} 8s infinite alternate-reverse ease-in-out;
+  animation: ${Ballonanimation} 3s infinite alternate-reverse ease-in-out;
 `;
 export const Button = styled.button`
   width: 118px;
   height: 43px;
-  margin: 20px 0px 0px 160px;
+  /* margin: 20px 0px 0px 160px; */
+  margin-top: 10px;
   border-radius: 21.5px;
   background-color: #fff;
   border: none;
@@ -239,4 +246,34 @@ export const TextWebHeading = styled.span`
   position: absolute;
   top: 7px;
   left: 60px;
+`;
+export const CircleImage = styled.img`
+  width: 90%;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  left: 0;
+  animation: rotationclock 10s ease-in-out infinite;
+  animation-direction: alternate, alternate-reverse;
+  @keyframes rotationclock {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  @keyframes rotationanti {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    top: 18%;
+    left: 6%;
+  }
 `;

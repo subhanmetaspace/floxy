@@ -42,15 +42,20 @@ export const DropDown = styled.div`
 `;
 
 export const Link = styled.div`
+  position: relative;
+  z-index: 1;
   color: #fff;
   cursor: pointer;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
   @media (max-width: 768px) {
     font-size: 22px;
   }
 `;
 
 export const Button = styled.button`
-  border: none;
+  /* border: none;
   border-radius: 20px;
   background-color: #fff;
   text-shadow: 1px 1px #dbdbdb;
@@ -58,7 +63,29 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
   margin: 0 15px;
-  font-size: 14px;
+  font-size: 14px; */
+  transition: 0.7s;
+  width: 140px;
+  padding: 14px 0px;
+  border-radius: 25px;
+  background-color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #232222;
+  border: none;
+  text-align: center;
+  color: #232222;
+  :focus {
+    border: none;
+    outline: none;
+  }
+  :hover {
+    color: rgb(255 255 255);
+    background-color: #111342;
+    border: 1px solid #675ae696;
+  }
   @media (max-width: 768px) {
     border: none;
     border-radius: 50px;
@@ -87,6 +114,9 @@ export const LoginButton = styled.div`
   color: #fff;
   font-weight: 500;
   cursor: pointer;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 `;
 
 export const DropDownOptions = styled.div`
@@ -97,7 +127,7 @@ export const DropDownOptions = styled.div`
   width: 250px;
   background-color: #fff;
   box-shadow: 0px 0px 13px 2px rgb(0 0 0 / 5%);
-  border-radius: 4px;
+  /* border-radius: 4px; */
   @media (max-width: 767px) {
     position: relative;
     left: 0px;
@@ -131,7 +161,7 @@ export const List = styled.div`
   :hover {
     background-color: #9e5ae6;
     color: white;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     @media (max-width: 767px) {
       box-shadow: none;
     }
@@ -160,8 +190,10 @@ export const MenuIcon = styled.i`
 
 export const MobileNavOptions = styled.div`
   @media (max-width: 768px) {
+    transform: ${(props) => (props.show ? "scaleX(1)" : "scaleX(0)")};
+    transform-origin: right;
+    transition: 0.5s;
     position: absolute;
-
     top: 0;
     right: 0;
     height: 100vh;

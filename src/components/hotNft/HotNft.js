@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Hand from "../images/hand.png";
 import Scanner from "../images/intro_video.gif";
 import Ballon from "../images/ballon.png";
+import circles from "../images/circle-top.png";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import {
   Heading,
@@ -26,14 +27,16 @@ import {
   TextWeb,
   CircleIcon,
   TextWebHeading,
+  CircleImage,
 } from "./HotNftsStyle";
 
 const HeadingWrapper = styled.div`
-  padding: 80px 10px 45px 0;
+  padding: 80px 10px 0px 0;
   display: flex;
   margin-left: 15%;
   @media (max-width: 768px) {
     margin-left: 6%;
+    padding: 30px 10px 0px 0;
   }
 `;
 
@@ -49,6 +52,7 @@ const HotNft = () => {
             <Text>
               <TextHandImage>
                 <HandImage src={Hand} />
+                <CircleImage src={circles} />
               </TextHandImage>
               <TextParagraph>TOP-CLASS</TextParagraph>
               <TextHeading>PAYMENT GATEWAY</TextHeading>

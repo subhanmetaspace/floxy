@@ -32,8 +32,8 @@ const Footer = () => {
           <FooterLogo src={floxy_logo}></FooterLogo>
           <FooterFloxyEmail>info@floxytrading.net</FooterFloxyEmail>
           <FooterIconsWrapper>
-            <FooterLinkedInIcon className="fa fa-brands fa-linkedin" />
-            <FooterTwitterIcon className="fa fa-brands fa-twitter" />
+            <FooterLinkedInIcon className="fa fa-brands fa-linkedin fa-2x" />
+            <FooterTwitterIcon className="fa fa-brands fa-twitter fa-2x" />
           </FooterIconsWrapper>
         </FooterList>
         <FooterList>
@@ -79,7 +79,7 @@ const Footer = () => {
       <FooterHorizontalLine />
       <FooterCopyRightWrapper>
         <FooterCopyRightLink>
-          <FooterSubscribeElement>privacy Policy</FooterSubscribeElement>
+          <FooterSubscribeElement>Privacy Policy</FooterSubscribeElement>
           <FooterSubscribeElement>Terms and Conditions</FooterSubscribeElement>
         </FooterCopyRightLink>
         <FooterCopyRightText>

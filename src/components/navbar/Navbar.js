@@ -134,110 +134,110 @@ const Navbar = ({
             className="fa fa-thin fa-bars fa-2x"
           />
         </MenuIconWrapper>
-        {navOptions && (
-          <MobileNavOptions onClick={(e) => e.stopPropagation()}>
-            <NavOptionsWrapper>
-              <CloseIcon
-                onClick={() => setNavOptions(false)}
-                className="fa fa-sharp fa-light  fa-xmark fa-2x"
-              ></CloseIcon>
-              <DropDownMobile
-                onClick={(e) => {
-                  setShowCrypto(!showCrypto);
-                  setShowDerivatives(false);
-                  setShowTrade(false);
-                  e.stopPropagation();
-                }}
-              >
-                <Link>Buy Crypto </Link>
-                {showCrypto ? (
-                  <AngleIcon className="fa fa-thin fa-angle-up" />
-                ) : (
-                  <AngleIcon className="fa fa-thin fa-angle-down" />
-                )}
-              </DropDownMobile>
-              {showCrypto && (
-                <DropDownOptionsMobile>
-                  <List onClick={() => setNavOptions(false)}>Fast Trade</List>
-                  <List onClick={() => setNavOptions(false)}>P2P</List>
-                </DropDownOptionsMobile>
+
+        <MobileNavOptions
+          show={navOptions}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <NavOptionsWrapper>
+            <CloseIcon
+              onClick={() => setNavOptions(false)}
+              className="fa fa-sharp fa-light  fa-xmark fa-2x"
+            ></CloseIcon>
+            <DropDownMobile
+              onClick={(e) => {
+                setShowCrypto(!showCrypto);
+                setShowDerivatives(false);
+                setShowTrade(false);
+                e.stopPropagation();
+              }}
+            >
+              <Link>Buy Crypto </Link>
+              {showCrypto ? (
+                <AngleIcon className="fa fa-thin fa-angle-up" />
+              ) : (
+                <AngleIcon className="fa fa-thin fa-angle-down" />
               )}
-              <DropDownMobile
-                onClick={(e) => {
-                  setShowTrade(!showTrade);
-                  setShowCrypto(false);
-                  setShowDerivatives(false);
-                  e.stopPropagation();
-                }}
-              >
-                <Link>Trade </Link>
-                {showTrade ? (
-                  <AngleIcon className="fa fa-thin fa-angle-up" />
-                ) : (
-                  <AngleIcon className="fa fa-thin fa-angle-down" />
-                )}
-              </DropDownMobile>
-              {showTrade && (
-                <DropDownOptionsMobile>
-                  <List onClick={() => setNavOptions(false)}>Spot Trading</List>
-                  <List onClick={() => setNavOptions(false)}>
-                    Strategy Trading
-                  </List>
-                  <List onClick={() => setNavOptions(false)}>
-                    Floxypay Convert
-                  </List>
-                </DropDownOptionsMobile>
+            </DropDownMobile>
+            {showCrypto && (
+              <DropDownOptionsMobile>
+                <List onClick={() => setNavOptions(false)}>Fast Trade</List>
+                <List onClick={() => setNavOptions(false)}>P2P</List>
+              </DropDownOptionsMobile>
+            )}
+            <DropDownMobile
+              onClick={(e) => {
+                setShowTrade(!showTrade);
+                setShowCrypto(false);
+                setShowDerivatives(false);
+                e.stopPropagation();
+              }}
+            >
+              <Link>Trade </Link>
+              {showTrade ? (
+                <AngleIcon className="fa fa-thin fa-angle-up" />
+              ) : (
+                <AngleIcon className="fa fa-thin fa-angle-down" />
               )}
-              <DropDownMobile
-                onClick={(e) => {
-                  setShowDerivatives(!showDerivatives);
-                  setShowCrypto(false);
-                  setShowTrade(false);
-                  e.stopPropagation();
-                }}
-              >
-                <Link>Derivatives </Link>
-                {showDerivatives ? (
-                  <AngleIcon className="fa fa-thin fa-angle-up" />
-                ) : (
-                  <AngleIcon className="fa fa-thin fa-angle-down" />
-                )}
-              </DropDownMobile>
-              {showDerivatives && (
-                <DropDownOptionsMobile>
-                  <List onClick={() => setNavOptions(false)}>
-                    Futures Classic
-                  </List>
-                  <List onClick={() => setNavOptions(false)}>Futures Lite</List>
-                </DropDownOptionsMobile>
+            </DropDownMobile>
+            {showTrade && (
+              <DropDownOptionsMobile>
+                <List onClick={() => setNavOptions(false)}>Spot Trading</List>
+                <List onClick={() => setNavOptions(false)}>
+                  Strategy Trading
+                </List>
+                <List onClick={() => setNavOptions(false)}>
+                  Floxypay Convert
+                </List>
+              </DropDownOptionsMobile>
+            )}
+            <DropDownMobile
+              onClick={(e) => {
+                setShowDerivatives(!showDerivatives);
+                setShowCrypto(false);
+                setShowTrade(false);
+                e.stopPropagation();
+              }}
+            >
+              <Link>Derivatives </Link>
+              {showDerivatives ? (
+                <AngleIcon className="fa fa-thin fa-angle-up" />
+              ) : (
+                <AngleIcon className="fa fa-thin fa-angle-down" />
               )}
-              <DropDownMobile
-                onClick={(e) => {
-                  e.stopPropagation();
-                }}
-              >
-                <Link onClick={() => setNavOptions(false)}>
-                  Innovation Lab{" "}
-                </Link>
-              </DropDownMobile>
-              <DropDownMobile
-                onClick={(e) => {
-                  e.stopPropagation();
-                }}
-              >
-                <Link onClick={() => setNavOptions(false)}>Announcements </Link>
-              </DropDownMobile>
-              <DropDownMobile
-                onClick={(e) => {
-                  e.stopPropagation();
-                }}
-              >
-                <Link onClick={() => setNavOptions(false)}>Login </Link>
-              </DropDownMobile>
-              <Button onClick={() => setNavOptions(false)}>Get Started</Button>
-            </NavOptionsWrapper>
-          </MobileNavOptions>
-        )}
+            </DropDownMobile>
+            {showDerivatives && (
+              <DropDownOptionsMobile>
+                <List onClick={() => setNavOptions(false)}>
+                  Futures Classic
+                </List>
+                <List onClick={() => setNavOptions(false)}>Futures Lite</List>
+              </DropDownOptionsMobile>
+            )}
+            <DropDownMobile
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <Link onClick={() => setNavOptions(false)}>Innovation Lab </Link>
+            </DropDownMobile>
+            <DropDownMobile
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <Link onClick={() => setNavOptions(false)}>Announcements </Link>
+            </DropDownMobile>
+            <DropDownMobile
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <Link onClick={() => setNavOptions(false)}>Login </Link>
+            </DropDownMobile>
+            <Button onClick={() => setNavOptions(false)}>Get Started</Button>
+          </NavOptionsWrapper>
+        </MobileNavOptions>
       </SmallDeviceNavBar>
     </Root>
   );
